@@ -41,8 +41,84 @@ def ball_reset():
 def wynik():
     score_text = FONT.render(f"{score_opponent} - {score_player}", True, czarny)
     screen.blit(score_text, (width // 2 - score_text.get_width() // 2, 36))
+def Gra():
+    global player_speed, score_player, score_opponent
 
+    ball.center = (width/2, height/2)
+    player_speed = 0
+    score_player = 0
+    score_opponent = 0
 
+    while True:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                return False
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_ESCAPE: 
+                    menu()
+                if event.key == pygame.K_DOWN:
+                    player_speed += 7
+                if event.key == pygame.K_UP:
+                    player_speed -= 7
+            if event.type == pygame.KEYUP:
+                if event.key == pygame.K_DOWN:
+                    player_speed -= 7
+                if event.key == pygame.K_UP:
+                    player_speed += 7
+
+        ball_ruch()
+        player_ruch()
+        opponent_ai()
+
+        screen.fill(tlo)
+        pygame.draw.rect(screen, beige, player)
+        pygame.draw.rect(screen, beige, opponent)
+        pygame.draw.ellipse(screen, zielony, ball)
+        pygame.draw.aaline(screen, bialy, (width/2,0), (width/2,height))
+        
+        wynik()
+
+        pygame.display.flip()
+        clock.tick(60)
+def menu():
+    menu_running = True
+    menu_selected = 0 
+
+    while menu_running:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
+
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_DOWN:
+                    menu_selected = (menu_selected + 1) % 3
+                if event.key == pygame.K_UP:  
+                    menu_selected = (menu_selected - 1) % 3
+                if event.key == pygame.K_RETURN:
+                    if menu_selected == 0:
+                        Gra()
+                    elif menu_selected == 1:
+                        pass  
+                    elif menu_selected == 2: 
+                        pygame.quit()
+                        sys.exit()
+        
+        screen.fill(niebieski)
+        title_text = FONT.render("PING PONG", True, bialy)
+        screen.blit(title_text, (width // 2 - title_text.get_width() // 2, 100))
+
+        
+        start_text = FONT.render("START", True, bialy if menu_selected != 0 else zielony)
+        options_text = FONT.render("OPTIONS", True, bialy if menu_selected != 1 else zielony)
+        exit_text = FONT.render("EXIT", True, bialy if menu_selected != 2 else zielony)
+
+        screen.blit(start_text, (width // 2 - start_text.get_width() // 2, 200))
+        screen.blit(options_text, (width // 2 - options_text.get_width() // 2, 300))
+        screen.blit(exit_text, (width // 2 - exit_text.get_width() // 2, 400))
+
+        pygame.display.flip()
+        clock.tick(60)
 pygame.init() 
 clock = pygame.time.Clock()
 
@@ -71,36 +147,5 @@ opponent = pygame.Rect(10, height/2 - 70, 10,140)
 
 tlo = pygame.Color(niebieski)
 
-run = True
 
-while run:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            run = False
-        if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_ESCAPE:
-                run = False
-            if event.key == pygame.K_DOWN:
-                player_speed += 7
-            if event.key == pygame.K_UP:
-                player_speed -=7
-        if event.type == pygame.KEYUP:
-            if event.key == pygame.K_DOWN:
-                player_speed -= 7
-            if event.key == pygame.K_UP:
-                player_speed +=7
-    ball_ruch()
-    player_ruch()
-    opponent_ai()
-
-    screen.fill(tlo)
-    pygame.draw.rect(screen, beige, player)
-    pygame.draw.rect(screen, beige, opponent)
-    pygame.draw.ellipse(screen, zielony, ball)
-    pygame.draw.aaline(screen, bialy, (width/2,0), (width/2,height))
-    
-    wynik()
-
-
-    pygame.display.flip()
-    clock.tick(60)
+Gra()

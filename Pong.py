@@ -71,11 +71,15 @@ opponent = pygame.Rect(10, height/2 - 70, 10,140)
 
 tlo = pygame.Color(niebieski)
 
-while True:
+run = True
+
+while run:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            run = false
+            run = False
         if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_ESCAPE:
+                run = False
             if event.key == pygame.K_DOWN:
                 player_speed += 7
             if event.key == pygame.K_UP:

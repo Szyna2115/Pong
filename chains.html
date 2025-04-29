@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chains | ICEDWOLF Premium Jewelry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--
+    Need to change the images in the future ad links to sides and make everything work with stripe/zen
+    -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">ICEDWOLF</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="custom.html">Custom</a></li>
+                    <li><a href="watch.html">Watches</a></li>
+                    <li><a href="chains.html">Chains</a></li>
+                    <li><a href="pedants.html">Pendants</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="icons">
+                    <div class="icon">🔍</div>
+                    <div class="icon">👤</div>
+                    <a href="cart.html" class="icon cart-icon">🛒 <span class="cart-count">0</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <h1 class="page-title">Luxury Chains</h1>
+        
+        <div class="filter-bar">
+            <div class="filter-options">
+                <select class="filter-dropdown">
+                    <option>Material</option>
+                    <option>Gold</option>
+                    <option>White Gold</option>
+                    <option>Rose Gold</option>
+                    <option>Platinum</option>
+                </select>
+                <select class="filter-dropdown">
+                    <option>Style</option>
+                    <option>Tennis</option>
+                    <option>Cuban Link</option>
+                    <option>Rope</option>
+                    <option>Snake</option>
+                    <option>Franco</option>
+                </select>
+                <select class="filter-dropdown">
+                    <option>Price Range</option>
+                    <option>Under $5,000</option>
+                    <option>$5,000 - $10,000</option>
+                    <option>$10,000 - $20,000</option>
+                    <option>$20,000+</option>
+                </select>
+            </div>
+            <select class="sort-dropdown">
+                <option>Sort by: Featured</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Newest</option>
+            </select>
+        </div>
+        
+        <div class="product-grid">
+            <!-- Row 1 -->
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="chain1" data-name="VVS Tennis Chain" data-price="12500">🛒</div>
+                <img src="images/chain/chain.png" alt="VVS Tennis Chain" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">VVS Tennis Chain</h3>
+                    <p class="product-price">$12,500</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="chain2" data-name="18K Gold Cuban Link" data-price="18999">🛒</div>
+                <img src="images/chain/chain.png" alt="18K Gold Cuban Link" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">18K Gold Cuban Link</h3>
+                    <p class="product-price">$18,999</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="chain3" data-name="Diamond Rope Chain" data-price="9750">🛒</div>
+                <img src="images/chain/chain.png" alt="Diamond Rope Chain" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Diamond Rope Chain</h3>
+                    <p class="product-price">$9,750</p>
+                </div>
+            </div>
+            
+            <!-- Row 2 -->
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="chain4" data-name="Iced Out Franco Chain" data-price="15200">🛒</div>
+                <img src="images/chain/chain.png" alt="Iced Out Franco Chain" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Iced Out Franco Chain</h3>
+                    <p class="product-price">$15,200</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="chain5" data-name="Platinum Snake Chain" data-price="8499">🛒</div>
+                <img src="images/chain/chain.png" alt="Platinum Snake Chain" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Platinum Snake Chain</h3>
+                    <p class="product-price">$8,499</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="chain6" data-name="Rose Gold Tennis Chain" data-price="11299">🛒</div>
+                <img src="images/chain/chain.png" alt="Rose Gold Tennis Chain" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Rose Gold Tennis Chain</h3>
+                    <p class="product-price">$11,299</p>
+                </div>
+            </div>
+            
+            <!-- Row 3 -->
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="chain7" data-name="Diamond Figaro Chain" data-price="14750">🛒</div>
+                <img src="images/chain/chain.png" alt="Diamond Figaro Chain" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Diamond Figaro Chain</h3>
+                    <p class="product-price">$14,750</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="chain8" data-name="White Gold Miami Cuban" data-price="22500">🛒</div>
+                <img src="images/chain/chain.png" alt="White Gold Miami Cuban" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">White Gold Miami Cuban</h3>
+                    <p class="product-price">$22,500</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="chain9" data-name="Herringbone Chain" data-price="7899">🛒</div>
+                <img src="images/chain/chain.png" alt="Herringbone Chain" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Herringbone Chain</h3>
+                    <p class="product-price">$7,899</p>
+                </div>
+            </div>
+            
+            <!-- Row 4 -->
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="chain10" data-name="Custom Curb Chain" data-price="10999">🛒</div>
+                <img src="images/chain/chain.png" alt="Custom Curb Chain" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Custom Curb Chain</h3>
+                    <p class="product-price">$10,999</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="chain11" data-name="Diamond Mariner Chain" data-price="16799">🛒</div>
+                <img src="images/chain/chain.png" alt="Diamond Mariner Chain" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Diamond Mariner Chain</h3>
+                    <p class="product-price">$16,799</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="chain12" data-name="Iced Out Wheat Chain" data-price="13450">🛒</div>
+                <img src="images/chain/chain.png" alt="Iced Out Wheat Chain" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Iced Out Wheat Chain</h3>
+                    <p class="product-price">$13,450</p>
+                </div>
+            </div>
+            
+            <!-- Row 5 -->
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="chain13" data-name="Byzantine Link Chain" data-price="19250">🛒</div>
+                <img src="images/chain/chain.png" alt="Byzantine Link Chain" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Byzantine Link Chain</h3>
+                    <p class="product-price">$19,250</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="chain14" data-name="Baguette Tennis Chain" data-price="24999">🛒</div>
+                <img src="images/chain/chain.png" alt="Baguette Tennis Chain" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Baguette Tennis Chain</h3>
+                    <p class="product-price">$24,999</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="chain15" data-name="Two-Tone Cable Chain" data-price="8750">🛒</div>
+                <img src="images/chain/chain.png" alt="Two-Tone Cable Chain" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Two-Tone Cable Chain</h3>
+                    <p class="product-price">$8,750</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pagination">
+            <a href="#" class="page-btn active">1</a>
+            <a href="#" class="page-btn">2</a>
+            <a href="#" class="page-btn">3</a>
+            <a href="#" class="page-btn">4</a>
+            <a href="#" class="page-btn">→</a>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>ICEDWOLF</h3>
+                    <p>Premium custom jewelry for those who demand excellence. Each piece is handcrafted to perfection by our master jewelers.</p>
+                    <div class="social-icons">
+                        <div class="social-icon">FB</div>
+                        <div class="social-icon">IG</div>
+                        <div class="social-icon">TW</div>
+                        <div class="social-icon">YT</div>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul class="footer-links">
+                        <li><a href="watch.html">Watches</a></li>
+                        <li><a href="chains.html">Chains</a></li>
+                        <li><a href="pedants.html">Pendants</a></li>
+                        <li><a href="#">Rings</a></li>
+                        <li><a href="#">Bracelets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Information</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive updates on new collections and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" class="newsletter-input">
+                        <button type="submit" class="newsletter-btn">→</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 ICEDWOLF. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="cart.js"></script>
+</body>
+</html>

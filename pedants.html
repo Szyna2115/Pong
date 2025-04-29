@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendants | ICEDWOLF Premium Jewelry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--
+    Need to change the images in the future ad links to sides and make everything work with stripe/zen
+    -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">ICEDWOLF</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="custom.html">Custom</a></li>
+                    <li><a href="watch.html">Watches</a></li>
+                    <li><a href="chains.html">Chains</a></li>
+                    <li><a href="pedants.html">Pendants</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="icons">
+                    <div class="icon">🔍</div>
+                    <div class="icon">👤</div>
+                    <a href="cart.html" class="icon cart-icon">🛒 <span class="cart-count">0</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <h1 class="page-title">Luxury Pendants</h1>
+        
+        <div class="filter-bar">
+            <div class="filter-options">
+                <select class="filter-dropdown">
+                    <option>Material</option>
+                    <option>Gold</option>
+                    <option>White Gold</option>
+                    <option>Rose Gold</option>
+                    <option>Platinum</option>
+                </select>
+                <select class="filter-dropdown">
+                    <option>Style</option>
+                    <option>Cross</option>
+                    <option>Religious</option>
+                    <option>Animal</option>
+                    <option>Geometric</option>
+                    <option>Custom</option>
+                </select>
+                <select class="filter-dropdown">
+                    <option>Price Range</option>
+                    <option>Under $3,000</option>
+                    <option>$3,000 - $7,000</option>
+                    <option>$7,000 - $15,000</option>
+                    <option>$15,000+</option>
+                </select>
+            </div>
+            <select class="sort-dropdown">
+                <option>Sort by: Featured</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Newest</option>
+            </select>
+        </div>
+        
+        <div class="product-grid">
+            <!-- Row 1 -->
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="pendant1" data-name="Diamond Cross Pendant" data-price="8750">🛒</div>
+                <img src="/api/placeholder/300/300" alt="Diamond Cross Pendant" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Diamond Cross Pendant</h3>
+                    <p class="product-price">$8,750</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="pendant2" data-name="Iced Wolf Pendant" data-price="14500">🛒</div>
+                <img src="/api/placeholder/300/300" alt="Iced Wolf Pendant" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Iced Wolf Pendant</h3>
+                    <p class="product-price">$14,500</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="pendant3" data-name="VVS Jesus Piece" data-price="16999">🛒</div>
+                <img src="/api/placeholder/300/300" alt="VVS Jesus Piece" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">VVS Jesus Piece</h3>
+                    <p class="product-price">$16,999</p>
+                </div>
+            </div>
+            
+            <!-- Row 2 -->
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="pendant4" data-name="Iced Out Compass" data-price="9299">🛒</div>
+                <img src="/api/placeholder/300/300" alt="Iced Out Compass" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Iced Out Compass</h3>
+                    <p class="product-price">$9,299</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="pendant5" data-name="Baguette Diamond Angel" data-price="12750">🛒</div>
+                <img src="/api/placeholder/300/300" alt="Baguette Diamond Angel" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Baguette Diamond Angel</h3>
+                    <p class="product-price">$12,750</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="pendant6" data-name="Lion Head Pendant" data-price="10500">🛒</div>
+                <img src="/api/placeholder/300/300" alt="Lion Head Pendant" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Lion Head Pendant</h3>
+                    <p class="product-price">$10,500</p>
+                </div>
+            </div>
+            
+            <!-- Row 3 -->
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="pendant7" data-name="Rose Gold Ankh" data-price="7899">🛒</div>
+                <img src="/api/placeholder/300/300" alt="Rose Gold Ankh" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Rose Gold Ankh</h3>
+                    <p class="product-price">$7,899</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="pendant8" data-name="Iced Out Star" data-price="6499">🛒</div>
+                <img src="/api/placeholder/300/300" alt="Iced Out Star" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Iced Out Star</h3>
+                    <p class="product-price">$6,499</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="pendant9" data-name="Diamond Dog Tag" data-price="11250">🛒</div>
+                <img src="/api/placeholder/300/300" alt="Diamond Dog Tag" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Diamond Dog Tag</h3>
+                    <p class="product-price">$11,250</p>
+                </div>
+            </div>
+            
+            <!-- Row 4 -->
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="pendant10" data-name="Custom Name Plate" data-price="8999">🛒</div>
+                <img src="/api/placeholder/300/300" alt="Custom Name Plate" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Custom Name Plate</h3>
+                    <p class="product-price">$8,999</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="pendant11" data-name="VVS Diamond Crown" data-price="17500">🛒</div>
+                <img src="/api/placeholder/300/300" alt="VVS Diamond Crown" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">VVS Diamond Crown</h3>
+                    <p class="product-price">$17,500</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="pendant12" data-name="Platinum Scorpion" data-price="9750">🛒</div>
+                <img src="/api/placeholder/300/300" alt="Platinum Scorpion" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Platinum Scorpion</h3>
+                    <p class="product-price">$9,750</p>
+                </div>
+            </div>
+            
+            <!-- Row 5 -->
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="pendant13" data-name="Iced Out Phoenix" data-price="13999">🛒</div>
+                <img src="/api/placeholder/300/300" alt="Iced Out Phoenix" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Iced Out Phoenix</h3>
+                    <p class="product-price">$13,999</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="pendant14" data-name="Diamond Pyramid" data-price="15750">🛒</div>
+                <img src="/api/placeholder/300/300" alt="Diamond Pyramid" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Diamond Pyramid</h3>
+                    <p class="product-price">$15,750</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="pendant15" data-name="Custom Photo Pendant" data-price="10299">🛒</div>
+                <img src="/api/placeholder/300/300" alt="Custom Photo Pendant" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Custom Photo Pendant</h3>
+                    <p class="product-price">$10,299</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pagination">
+            <a href="#" class="page-btn active">1</a>
+            <a href="#" class="page-btn">2</a>
+            <a href="#" class="page-btn">3</a>
+            <a href="#" class="page-btn">4</a>
+            <a href="#" class="page-btn">→</a>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>ICEDWOLF</h3>
+                    <p>Premium custom jewelry for those who demand excellence. Each piece is handcrafted to perfection by our master jewelers.</p>
+                    <div class="social-icons">
+                        <div class="social-icon">FB</div>
+                        <div class="social-icon">IG</div>
+                        <div class="social-icon">TW</div>
+                        <div class="social-icon">YT</div>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul class="footer-links">
+                        <li><a href="watch.html">Watches</a></li>
+                        <li><a href="chains.html">Chains</a></li>
+                        <li><a href="pedants.html">Pendants</a></li>
+                        <li><a href="#">Rings</a></li>
+                        <li><a href="#">Bracelets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Information</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive updates on new collections and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" class="newsletter-input">
+                        <button type="submit" class="newsletter-btn">→</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 ICEDWOLF. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="cart.js"></script>
+</body>
+</html>

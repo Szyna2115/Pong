@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | ICEDWOLF Premium Jewelry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--
+    Need to change the images in the future ad links to sides and make everything work with stripe/zen
+    -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">ICEDWOLF</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="custom.html">Custom</a></li>
+                    <li><a href="watch.html">Watches</a></li>
+                    <li><a href="chains.html">Chains</a></li>
+                    <li><a href="pedants.html">Pendants</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="icons">
+                    <div class="icon">🔍</div>
+                    <div class="icon">👤</div>
+                    <a href="cart.html" class="icon cart-icon">🛒 <span class="cart-count">0</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Shop All Jewelry</h1>
+            <p class="hero-subtitle">Discover our exclusive collection of premium handcrafted jewelry</p>
+        </div>
+    </section>
+    
+    <main class="container">
+        <div class="filter-bar">
+            <div class="filter-options">
+                <select class="filter-dropdown" id="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="watches">Watches</option>
+                    <option value="chains">Chains</option>
+                    <option value="pendants">Pendants</option>
+                    <option value="rings">Rings</option>
+                    <option value="bracelets">Bracelets</option>
+                </select>
+                <select class="filter-dropdown" id="price-filter">
+                    <option value="all">All Prices</option>
+                    <option value="under5000">Under $5,000</option>
+                    <option value="5000-10000">$5,000 - $10,000</option>
+                    <option value="10000-25000">$10,000 - $25,000</option>
+                    <option value="25000-50000">$25,000 - $50,000</option>
+                    <option value="over50000">Over $50,000</option>
+                </select>
+            </div>
+            <select class="sort-dropdown" id="sort-filter">
+                <option value="featured">Sort by: Featured</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="name-asc">Name: A-Z</option>
+                <option value="name-desc">Name: Z-A</option>
+            </select>
+        </div>
+        
+        <h2 class="section-title">Featured Products</h2>
+        <div class="product-grid">
+            <!-- Featured Products -->
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="featured1" data-name="Diamond Luxury Watch" data-price="24999">🛒</div>
+                <img src="/api/placeholder/300/300" alt="Diamond Luxury Watch" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Diamond Luxury Watch</h3>
+                    <p class="product-price">$24,999</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="featured2" data-name="VVS Tennis Chain" data-price="12500">🛒</div>
+                <img src="/api/placeholder/300/300" alt="VVS Tennis Chain" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">VVS Tennis Chain</h3>
+                    <p class="product-price">$12,500</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="featured3" data-name="Custom Diamond Pendant" data-price="8999">🛒</div>
+                <img src="/api/placeholder/300/300" alt="Custom Diamond Pendant" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Custom Diamond Pendant</h3>
+                    <p class="product-price">$8,999</p>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="section-title">Watches</h2>
+        <div class="product-grid">
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="watch1" data-name="Rolex Datejust 41" data-price="28500">🛒</div>
+                <img src="/api/placeholder/300/300" alt="Rolex Datejust 41" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Rolex Datejust 41</h3>
+                    <p class="product-price">$28,500</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="watch2" data-name="AP Royal Oak Offshore" data-price="76999">🛒</div>
+                <img src="/api/placeholder/300/300" alt="AP Royal Oak Offshore" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">AP Royal Oak Offshore</h3>
+                    <p class="product-price">$76,999</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="watch3" data-name="Patek Philippe Nautilus" data-price="89750">🛒</div>
+                <img src="/api/placeholder/300/300" alt="Patek Philippe Nautilus" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Patek Philippe Nautilus</h3>
+                    <p class="product-price">$89,750</p>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="section-title">Chains</h2>
+        <div class="product-grid">
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="chain1" data-name="VVS Tennis Chain" data-price="12500">🛒</div>
+                <img src="/api/placeholder/300/300" alt="VVS Tennis Chain" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">VVS Tennis Chain</h3>
+                    <p class="product-price">$12,500</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="chain2" data-name="18K Gold Cuban Link" data-price="18999">🛒</div>
+                <img src="/api/placeholder/300/300" alt="18K Gold Cuban Link" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">18K Gold Cuban Link</h3>
+                    <p class="product-price">$18,999</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="chain3" data-name="Diamond Rope Chain" data-price="9750">🛒</div>
+                <img src="/api/placeholder/300/300" alt="Diamond Rope Chain" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Diamond Rope Chain</h3>
+                    <p class="product-price">$9,750</p>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="section-title">Pendants</h2>
+        <div class="product-grid">
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="pendant1" data-name="Diamond Cross Pendant" data-price="8750">🛒</div>
+                <img src="/api/placeholder/300/300" alt="Diamond Cross Pendant" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Diamond Cross Pendant</h3>
+                    <p class="product-price">$8,750</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="pendant2" data-name="Iced Wolf Pendant" data-price="14500">🛒</div>
+                <img src="/api/placeholder/300/300" alt="Iced Wolf Pendant" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Iced Wolf Pendant</h3>
+                    <p class="product-price">$14,500</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="add-to-cart-btn" data-id="pendant3" data-name="VVS Jesus Piece" data-price="16999">🛒</div>
+                <img src="/api/placeholder/300/300" alt="VVS Jesus Piece" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">VVS Jesus Piece</h3>
+                    <p class="product-price">$16,999</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pagination">
+            <a href="#" class="page-btn active">1</a>
+            <a href="#" class="page-btn">2</a>
+            <a href="#" class="page-btn">3</a>
+            <a href="#" class="page-btn">→</a>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>ICEDWOLF</h3>
+                    <p>Premium custom jewelry for those who demand excellence. Each piece is handcrafted to perfection by our master jewelers.</p>
+                    <div class="social-icons">
+                        <div class="social-icon">FB</div>
+                        <div class="social-icon">IG</div>
+                        <div class="social-icon">TW</div>
+                        <div class="social-icon">YT</div>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul class="footer-links">
+                        <li><a href="watch.html">Watches</a></li>
+                        <li><a href="chains.html">Chains</a></li>
+                        <li><a href="pedants.html">Pendants</a></li>
+                        <li><a href="#">Rings</a></li>
+                        <li><a href="#">Bracelets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Information</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive updates on new collections and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" class="newsletter-input">
+                        <button type="submit" class="newsletter-btn">→</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 ICEDWOLF. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="cart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Filter functionality
+            const categoryFilter = document.getElementById('category-filter');
+            const priceFilter = document.getElementById('price-filter');
+            const sortFilter = document.getElementById('sort-filter');
+            
+            // Add event listeners to filters
+            categoryFilter.addEventListener('change', filterProducts);
+            priceFilter.addEventListener('change', filterProducts);
+            sortFilter.addEventListener('change', filterProducts);
+            
+            function filterProducts() {
+                // This would normally filter products based on selected criteria
+                // For this demo, we'll just show an alert
+                alert('Filtering functionality would be implemented here in a real application.');
+            }
+        });
+    </script>
+</body>
+</html>
